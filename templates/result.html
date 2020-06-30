@@ -1,0 +1,32 @@
+  
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+    <link href="../static/style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <section class="hero">
+      <h1>
+        Sentiment Analysis.
+      </h1>
+    </section>
+    <div class="results">
+
+
+    
+  {% if prediction == 0 %}
+  <h2 style="color:red;">It's a Negative Review</h2>
+  {% elif prediction == 1 %}
+  <h2 style="color:blue;">It's Positive Review</h2>
+  {% endif %}
+  </div>
+  
+  <a href="..">
+  <input type="submit" value="Go Back.....">
+  </a>
+
+
+</body>
+</html>
